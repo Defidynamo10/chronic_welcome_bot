@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: chronic-welcome-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python chronic_welcome_bot.py
